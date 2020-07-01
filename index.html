@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Naouel Zenati" />
+  <meta name="description" content="Portfolio de Naouel Zenati" />
+  <meta name="keywords" content="Portfolio, Web, Design, Projets" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naouel Zenati - Portfolio</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <section id="intro">
+    <article id="introtop">
+      <h1 style="font-size: 65px;">Bienvenue <br />sur mon portfolio,<br />je suis Naouël Zenati</h1>
+      <p id="intro-position">Etudiante en licence projet web et mobile</p>
+      <a class="bouttonintro" href="#about" title="">En Savoir Plus   &#8595;</a>
+    </article>
+  </section>
+
+  <section id="about" style="background-color: #F5F5F5;">
+    <article id="maPresentation">
+      <h1>A mon sujet</h1>
+      <img src="IMG/MonDessin.png" alt="Avatar">
+      <p class="moi"> &nbsp; &nbsp; &nbsp;Je suis actuellement étudiante <B>licence pro. Projet web et mobile</B> de la Sorbonne Université (Paris Jussieu). Suite à ma formation , j’ai pu élargir mes compétences dans le domaine du développement web, de l'infographie ainsi que celui de la communication. Je suis dynamique et toujours motivée pour travailler. <br />
+      Je sais créer un site web à partir de zéro ou d'un template Wordpress. Je possède des compétences en dévelopemment front-end ( HTML, CSS, Javascript), ainsi qu'en développement back-end (PHP, MySQL). <br />
+      Je peux réaliser des maquettes pour tout type de projets, des illustrations, des logos et toute sorte d'éléments graphiques. <br />
+      Je suis actuellement à la <B>recherche d’une alternance pour la rentrée 2020</B> ! N'hésitez donc pas à télécharger mon CV pour en apprendre plus !
+    </p>
+    </article>
+    <div id="ConsulterCVimg" class="ConsulterCV">
+        <p onclick="window.open('CV_Naouel_ZENATI.pdf')"> CONSULTER CV </p>
+      </div>
+</section>
+
+<section id="Realisations">
+  <h1>Mes Réalisations</h1>
+
+  <div id="MenuProjets">
+    <button class="btn active" onclick="filterSelection('Tous')"> Tous</button>
+    <button class="btn" onclick="filterSelection('Web')"> Web</button>
+    <button class="btn" onclick="filterSelection('Infographie')"> Infographie</button>
+    <button class="btn" onclick="filterSelection('Vidéo')"> Vidéo</button>
+    <button class="btn" onclick="filterSelection('Mobile')"> Mobile</button>
+  </div>
+
+<div class="Projets">
+  <div class="filterDiv hovereffect Infographie">
+    <img src="IMG/affiche.jpg" alt="Affiche Stop Pesticide"/>
+     <div class="overlay">
+        <h2>Réalisation d'une affiche sur le thème des pesticides en soutien à l'association nous voulons des coquelicots</h2>
+        <a class="info" href="#" onclick="window.open('IMG/Affiche_pesticide.jpg')">Voir</a>
+    </div>
+  </div>
+  <div class="filterDiv hovereffect Web">
+    <img src="IMG/eboutique.jpg" alt="Site eboutique"/>
+   <div class="overlay">
+        <h2>Réalisation d'un site e-boutique en Symfony</h2>
+        <a class="info" href="https://github.com/NaouelZ/eboutiqueSymfony" target="_blank">Voir le git</a>
+    </div>
+  </div>
+  <div class="filterDiv hovereffect Web">
+    <img src="IMG/carnet_addresse.jpg" alt="carnet addresses"/>
+   <div class="overlay">
+        <h2>Réalisation d'un carnet d'addresses en NodeJS et VueJS</h2>
+        <a class="info" href="https://github.com/NaouelZ/carnetAddresses" target="_blank">Voir le git</a>
+    </div>
+  </div>
+  <div class="filterDiv hovereffect Mobile">
+    <img src="IMG/pomodoro.jpg" alt="Application mobile pomodoro"/>
+     <div class="overlay">
+        <h2>Réalisation d'un pomodoro en react native</h2>
+        <a class="info" href="https://github.com/NaouelZ/Mobile_ReactNative/tree/master/Pomodoro" target="_blank">Voir le git</a>
+    </div>
+  </div>
+  <div class="filterDiv hovereffect Web">
+    <img src="IMG/etee-api.jpg" alt="API Rest"/>
+     <div class="overlay">
+        <h2>Réalisation d'une API en go</h2>
+        <a class="info" href="https://github.com/NaouelZ/etee-api" target="_blank">Voir le git</a>
+    </div>
+  </div>
+  <div class="filterDiv hovereffect Infographie">
+    <img src="IMG/Lalalisa_mockup.jpg" alt="Affiche Stop Pesticide"/>
+     <div class="overlay">
+        <h2>Réalisation d'une affiche dans le cadre d'un TP en Illustrator</h2>
+        <a class="info" href="#" onclick="window.open('IMG/lalalisa_portrait.jpg')">Voir</a>
+     </div>
+  </div>
+  <div class="filterDiv hovereffect Mobile">
+    <img src="IMG/listefilm.jpg" alt="Application mobile recherche film"/>
+     <div class="overlay">
+        <h2>Réalisation d'une application permettant de rechercher un film </h2>
+        <a class="info" href="https://github.com/NaouelZ/Mobile_ReactNative/tree/master/MovieRatingsApp" target="_blank">En cours</a>
+    </div>
+  </div>
+  <div class="filterDiv hovereffect Vidéo">
+    <img src="http://naouel-zenati.com/IMG/formation.png" alt="Vidéo Je film ma formation"/>
+     <div class="overlay">
+        <h2>Réalisation d'un court métrage présentant la licence pro. developpement web et mobile de l'IUT de Bobigny</h2>
+        <a class="info" href="#" onclick="window.open('IMG/FILM_Licence_pro_web_mobile.mp4')">Voir</a>
+    </div>
+  </div>
+  <div class="filterDiv hovereffect Vidéo">
+    <img src="http://naouel-zenati.com/IMG/angryco.jpg" alt="Motion Video"/>
+     <div class="overlay">
+        <h2>Réalisation d'un stop motion sur le thème du sucre et de la migration</h2>
+        <a class="info" href="#" onclick="window.open('IMG/stopmotion.mp4')">Voir</a>
+    </div>
+  </div>
+  <div class="filterDiv hovereffect Web">
+    <img src="IMG/memory.jpg" alt="Jeux Memory"/>
+   <div class="overlay">
+        <h2>Réalisation du jeux mémory en Javascript</h2>
+        <a class="info" href="./memory/memory.html" target="_blank">Voir</a>
+    </div>
+  </div>
+  <div class="filterDiv hovereffect Infographie">
+    <img src="IMG/logocorp.png" alt="Affiche Stop Pesticide"/>
+     <div class="overlay">
+        <h2>Réalisation d'un logo pour l'association MMI Corporation </h2>
+        <a class="info" href="#" onclick="window.open('IMG/logocorp.png')">Voir</a>
+     </div>
+  </div>
+</div>
+</section>
+<section class="footer">
+  <p>© Naouel Zenati - 2019</p>
+</section>
+
+<script>
+filterSelection("Tous")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "Tous") c = "";
+  for (i = 0; i < x.length; i++) {
+    RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+  }
+}
+
+function AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var btnProjets = document.getElementById("MenuProjets");
+var btns = btnProjets.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
